@@ -1,0 +1,1 @@
+# Fanslation for magicraft
