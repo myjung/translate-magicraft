@@ -62,7 +62,6 @@ def main():
     if args.backup:
         # Extract config files
         backup_dir.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(resource_asset_path, backup_dir.joinpath("resources.assets"))
         resource_asset_path = pathlib.Path(loaded_toml['local']['GAME_PATH']).joinpath(asset_path)
         shutil.copyfile(resource_asset_path, backup_dir.joinpath("resources.assets"))
 
